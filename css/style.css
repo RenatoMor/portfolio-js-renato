@@ -1,11 +1,5 @@
 @import url('./global.css');
 
-body {
-    background-color: #000;
-    color: #fff;
-    font-family: 'Opens sans', sans-serif;
-}
-
 /*¨------------------header------------------*/
 
 .header {
@@ -18,28 +12,62 @@ body {
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    margin-top: 20px;
 }
 
 .header .title {
-    text-align: center;
-    padding: 1rem 0 1rem 0;
     font-family: 'Asul', sans-serif;
-    font-size: 1.75rem;
-    font-weight: 600;
+    text-align: center;
+    padding: 1.5rem 0 0.75rem 0;
 }
-
-
-/*¨------------------main------------------*/
-
-
 
 /*¨---------------information--------------*/
 
+.information {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;}
+
 .information p {
-    font-size: 1rem;
-    padding: 0.25rem 0 0.25rem 0;
-    text-align: center;
-    font-family: 'Open sans', sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0.5rem;
+    font-family: 'Kanit', sans-serif;
+    font-size: 1.125rem;
+    font-weight: 300;   
 }
+
+.information p::before {
+    content: ' ';
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url('../assets/img/icon/job.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 0.5rem;
+    vertical-align: middle;
+}
+
+.information .job::before {
+    background-image: url('../assets/img/icon/job.png');
+}
+
+.information .student::before {
+    background-image: url('../assets/img/icon/student.png');
+}
+
+.information .location::before {
+    background-image: url('../assets/img/icon/location.png');
+}
+
+.information .phone::before {
+    background-image: url('../assets/img/icon/phone.png');
+}
+
+.information .email::before {
+    background-image: url('../assets/img/icon/email.png');
+}
+
 
